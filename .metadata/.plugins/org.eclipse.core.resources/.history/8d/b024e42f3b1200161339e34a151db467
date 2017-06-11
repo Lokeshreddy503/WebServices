@@ -1,0 +1,21 @@
+package org.lokesh.applabs.messenger.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.lokesh.applabs.messenger.model.Messages;
+
+public class MessageService {
+
+public List<Messages> getMessages()
+{
+	Messages messages = new Messages(111,"Hello LOkesh","Lokesh");
+	Messages messages2 = new Messages(222,"Hello Raju","Raju");
+	List<Messages> list = new ArrayList<Messages>();
+	list.add(messages);
+	list.add(messages2);
+	return list;
+	
+}
+
+}
